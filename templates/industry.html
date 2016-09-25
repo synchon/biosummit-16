@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Biosummit '16</title>
+  <meta name="description" content="home">
+  <meta name="author" content="Synchon Mandal">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize/materialize.min.css') }}"  media="screen,projection"/>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename = 'favicon/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'favicon/favicon-32x32.png') }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'favicon/favicon-16x16.png') }}" sizes="16x16">
+  <link rel="manifest" href="{{ url_for('static', filename = 'favicon/manifest.json') }}">
+  <link rel="mask-icon" href="{{ url_for('static', filename = 'favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Fixed Navbar (Common to all templates) | Don't modify -->
+    <div class="navbar-fixed z-depth-2">
+      <nav>
+        <div class="nav-wrapper green grey darken-4">
+        <a href="#" data-activates="nav-mobile" class="right button-collapse"><i class="material-icons">menu</i></a>
+        <a href="/" class="center brand-logo hide-on-large-only"><img src="{{ url_for('static', filename='img/core/biosummit_light.png') }}"></a>
+            
+        <!-- hides on medium and small devices -->
+          <ul class="hide-on-med-and-down">
+            <li><a href="/"><img src="{{ url_for('static', filename='img/core/biosummit_light.png') }}"></a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="industry.html">Industry Associates</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="http://serb.gov.in/home.php"><img src="{{ url_for('static', filename='img/core/nserb.png') }}"></a></li>
+            <li><a href="http://vit.ac.in"><img src="{{ url_for('static', filename='img/core/vit_logo.png') }}"></a></li>
+          </ul>
+            
+        <!-- activates only for devices of medium and small devices -->
+            <ul id="nav-mobile">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="industry.html">Industry Associates</a></li>
+                <li><a href="http://serb.gov.in/home.php"><img src="{{ url_for('static', filename='img/core/nserb.png') }}"></a></li>
+                <li><a href="http://vit.ac.in"><img src="{{ url_for('static', filename='img/core/vit_logo.png') }}"></a></li>
+            </ul>
+            
+        </div>
+      </nav>
+    </div>
+    
+    <!-- Start of main content -->
+    <div class="container">
+        <h4>Our Industry Associates</h4>
+    
+    <ol class="collection z-depth-1">
+      <li class="collection-item">Agilent Technologies, Bengaluru</li>
+      <li class="collection-item">Anthem Biosciences Pvt. Ltd., Bengaluru</li>
+      <li class="collection-item">Biocon, Bengaluru</li>
+      <li class="collection-item">Bioklone Technologies, Chennai</li>
+      <li class="collection-item">Biospark India Pvt. Ltd., Salem</li>
+      <li class="collection-item">Caprienzymes, Chennai</li>
+      <li class="collection-item">CPC Diagnostics, Chennai</li>
+      <li class="collection-item">GE Healthcare, Bengaluru</li>
+      <li class="collection-item">Genewin Pvt. Ltd., Bengaluru</li>
+      <li class="collection-item">Genotypic Technologies [P] Ltd., Bengaluru</li>
+      <li class="collection-item">Hi Media, Mumbai</li>
+      <li class="collection-item">Histogenics Pvt. Ltd., Chennai</li>
+      <li class="collection-item">Hindustan Unilever Ltd., Bengaluru</li>
+      <li class="collection-item">Labmate Asia, Bengaluru</li>
+      <li class="collection-item">LifeCell International Pvt. Ltd., Chennai</li>
+      <li class="collection-item">Malladi Drugs and Pharmaceuticals, Ranipet</li>
+      <li class="collection-item">Novo Nordisk India Pvt. Ltd., Bengaluru</li>
+      <li class="collection-item">Omniactive Health Technologies, Mumbai</li>
+      <li class="collection-item">Orchid Pharmaceuticals, Chennai</li>
+      <li class="collection-item">Organica Biotech. Pvt. Ltd., Mumbai</li>
+      <li class="collection-item">Pfizer Ltd., Chennai</li>
+      <li class="collection-item">Pharmaceutical Product Development, Bengaluru</li>
+      <li class="collection-item">Pharma Quality Europe, Chennai</li>
+      <li class="collection-item">Progen Biotech., Salem</li>
+      <li class="collection-item">Refsyn Biosciences Pvt. Ltd., Pondicherry</li>
+      <li class="collection-item">Salem Microbes, Salem</li>
+      <li class="collection-item">Sartorius Stedim India Pvt. Ltd., Bengaluru</li>
+      <li class="collection-item">Shasun Pharmaceuticals Ltd., Chennai</li>
+      <li class="collection-item">SNAP Natural &amp; Alginate Products Pvt. Ltd., Ra</li>
+      <li class="collection-item">Strides Arco Labs, Bengaluru</li>
+      <li class="collection-item">Thirumalai Chemicals Ltd., Ranipet</li>
+      <li class="collection-item">V ClinBio Pvt. Ltd., Chennai</li>
+      <li class="collection-item">VirtiBiolabs, Salem</li>
+    </ol>
+    
+    
+    </div>
+    <!-- Footer --------------------------- -->
+        
+
+    <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Address:</h5>
+                    <ul class="grey-text text-lighten-4">
+                        <li>Convener - VIT Biosummit 2016</li>
+                        <li>School of Bio Sciences and Technology, VIT University, Vellore - 632014, Tamil Nadu, India</li>
+                        <li>Email - vitbiosummit2016@gmail.com</li>
+                    </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links:</h5>
+                <ul>
+                    
+                    <div><li><a href="https://www.facebook.com/vitbiosummit/" class="white-text valign-wrapper"><img src={{ url_for('static', filename='img/core/facebook.png') }} style="padding: 0.5rem;">Like us!</a></li></div>
+                    <div><li><a href="https://www.instagram.com/vitbiosummit/" class="white-text valign-wrapper"><img src={{ url_for('static', filename='img/core/instagram.png') }} style="padding: 0.5rem;">Follow us!</a></li></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Synchon Mandal
+            </div>
+          </div>
+        </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static' ,filename='js/materialize/materialize.min.js') }}"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      $('.parallax').parallax();
+    });
+  </script>
+</body>
+</html>

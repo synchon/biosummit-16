@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Biosummit '16</title>
+  <meta name="description" content="gallery">
+  <meta name="author" content="Synchon Mandal">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize/materialize.min.css') }}"  media="screen,projection"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/slick/slick.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/slick/slick-theme.css') }}">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename = 'favicon/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'favicon/favicon-32x32.png') }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'favicon/favicon-16x16.png') }}" sizes="16x16">
+  <link rel="manifest" href="{{ url_for('static', filename = 'favicon/manifest.json') }}">
+  <link rel="mask-icon" href="{{ url_for('static', filename = 'favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Fixed Navbar (Common to all templates) | Don't modify -->
+    <div class="navbar-fixed z-depth-2">
+      <nav>
+        <div class="nav-wrapper green grey darken-4">
+        <a href="#" data-activates="nav-mobile" class="right button-collapse"><i class="material-icons">menu</i></a>
+        <a href="/" class="center brand-logo hide-on-large-only"><img src="{{ url_for('static', filename='img/core/biosummit_light.png') }}"></a>
+            
+        <!-- hides on medium and small devices -->
+          <ul class="hide-on-med-and-down">
+            <li><a href="/"><img src="{{ url_for('static', filename='img/core/biosummit_light.png') }}"></a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="industry.html">Industry Associates</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="http://serb.gov.in/home.php"><img src="{{ url_for('static', filename='img/core/nserb.png') }}"></a></li>
+            <li><a href="http://vit.ac.in"><img src="{{ url_for('static', filename='img/core/vit_logo.png') }}"></a></li>
+          </ul>
+            
+        <!-- activates only for devices of medium and small devices -->
+            <ul id="nav-mobile">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="industry.html">Industry Associates</a></li>
+                <li><a href="http://serb.gov.in/home.php"><img src="{{ url_for('static', filename='img/core/nserb.png') }}"></a></li>
+                <li><a href="http://vit.ac.in"><img src="{{ url_for('static', filename='img/core/vit_logo.png') }}"></a></li>
+            </ul>
+            
+        </div>
+      </nav>
+    </div>
+
+    <!-- Start of gallery carousel -->
+    <div class='slideshow'>
+      <div><img src="{{ url_for('static', filename='img/gallery/slide1.png') }}"></div>
+      <div><img src="{{ url_for('static', filename='img/gallery/slide2.png') }}"></div>
+      <div><img src="{{ url_for('static', filename='img/gallery/slide3.png') }}"></div>
+      <div><img src="{{ url_for('static', filename='img/gallery/slide4.png') }}"></div>
+      <div><img src="{{ url_for('static', filename='img/gallery/slide5.png') }}"></div>
+  </div>
+    
+    
+    <!-- Footer --------------------------- -->
+        
+
+    <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Address:</h5>
+                    <ul class="grey-text text-lighten-4">
+                        <li>Convener - VIT Biosummit 2016</li>
+                        <li>School of Bio Sciences and Technology, VIT University, Vellore - 632014, Tamil Nadu, India</li>
+                        <li>Email - vitbiosummit2016@gmail.com</li>
+                    </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links:</h5>
+                <ul>
+                    
+                    <div><li><a href="https://www.facebook.com/vitbiosummit/" class="white-text valign-wrapper"><img src={{ url_for('static', filename='img/core/facebook.png') }} style="padding: 0.5rem;">Like us!</a></li></div>
+                    <div><li><a href="https://www.instagram.com/vitbiosummit/" class="white-text valign-wrapper"><img src={{ url_for('static', filename='img/core/instagram.png') }} style="padding: 0.5rem;">Follow us!</a></li></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Synchon Mandal
+            </div>
+          </div>
+        </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static' ,filename='js/materialize/materialize.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/slick/slick.min.js')}}"></script>
+  <script>
+    $(document).ready(function(){
+        $('.slideshow').slick({
+            pauseOnHover: false,
+            mobileFirst: true,
+            adaptiveHeight: true,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: 1,
+            autoPlaySpeed: 3000,
+        });
+        $(".button-collapse").sideNav();
+    });
+  </script>
+</body>
+</html>

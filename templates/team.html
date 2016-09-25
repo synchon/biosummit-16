@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Biosummit '16</title>
+  <meta name="description" content="team">
+  <meta name="author" content="Synchon Mandal">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize/materialize.min.css') }}"  media="screen,projection"/>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename = 'favicon/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'favicon/favicon-32x32.png') }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'favicon/favicon-16x16.png') }}" sizes="16x16">
+  <link rel="manifest" href="{{ url_for('static', filename = 'favicon/manifest.json') }}">
+  <link rel="mask-icon" href="{{ url_for('static', filename = 'favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Fixed Navbar (Common to all templates) | Don't modify -->
+    <div class="navbar-fixed z-depth-2">
+      <nav>
+        <div class="nav-wrapper green grey darken-4">
+        <a href="#" data-activates="nav-mobile" class="right button-collapse"><i class="material-icons">menu</i></a>
+        <a href="/" class="center brand-logo hide-on-large-only"><img src="{{ url_for('static', filename='img/core/biosummit_light.png') }}"></a>
+            
+        <!-- hides on medium and small devices -->
+          <ul class="hide-on-med-and-down">
+            <li><a href="/"><img src="{{ url_for('static', filename='img/core/biosummit_light.png') }}"></a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="industry.html">Industry Associates</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="http://serb.gov.in/home.php"><img src="{{ url_for('static', filename='img/core/nserb.png') }}"></a></li>
+            <li><a href="http://vit.ac.in"><img src="{{ url_for('static', filename='img/core/vit_logo.png') }}"></a></li>
+          </ul>
+            
+        <!-- activates only for devices of medium and small devices -->
+            <ul id="nav-mobile">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="industry.html">Industry Associates</a></li>
+                <li><a href="http://serb.gov.in/home.php"><img src="{{ url_for('static', filename='img/core/nserb.png') }}"></a></li>
+                <li><a href="http://vit.ac.in"><img src="{{ url_for('static', filename='img/core/vit_logo.png') }}"></a></li>
+            </ul>
+            
+        </div>
+      </nav>
+    </div>
+
+    <!-- Start of image cards -->
+    <!-- Row --------- -->
+    <div class="container">
+    <h3 class="center-align">Chief Patron</h3>
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. G. Viswanathan</h5>
+              <p>Chancellor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Row-------- -->
+     <h3 class="center-align">Co-Patrons</h3>   
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+               <h5>Shri. Sankar Viswanathan</h5> 
+              <p>Vice President</p>
+            </div>
+          </div>
+        </div>
+        
+    
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. Sekar Viswanathan</h5>
+              <p>Vice President</p>
+            </div>
+          </div>
+        </div>
+    
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Shri. G. V. Selvam</h5>
+              <p>Vice President</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Row---------- -->
+    <h3 class="center-align">Advisors</h3>
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. Anand A. Samuel</h5>
+              <p>Vice Chancellor</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Row ------------ -->
+    
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. S. Narayanan</h5>
+              <p>Pro Vice Chancellor</p>
+            </div>
+           </div>
+        </div>
+    
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. V. Raju</h5>
+              <p>Pro Vice Chancellor</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. P. Gunasekaran</h5>
+              <p>Pro Vice Chancellor</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    <!-- Row ------------- -->
+    <h3 class="center-align">Chairpersons</h3>
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. K.M. Gothandam</h5>
+              <p>Dean, SBST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Row ----------- -->
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. C. Ramalingam</h5>
+              <p>Sr. Professor, SBST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Row ------------- -->
+    <h3 class="center-align">Convener</h3>
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="card">
+            <div class="card-content center-align">
+                <h5>Dr. V. Mohanasrinivasan</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Row ------------- -->
+    <h3 class="center-align">Co-Conveners</h3>
+    <div class="row">
+        <div class="col s12 m4 offset-m2">
+          <div class="card">
+            <div class="card-content center-align">
+              <h5>Dr. K. Ramanathan</h5>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h5>Dr. S. Vino</h5>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4 offset-m2">
+          <div class="card">
+            <div class="card-content center-align">
+              <h5>Dr. W. Jabez Osborne</h5>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h5>Dr. K. Suthindhiran</h5>
+          </div>
+        </div>
+        </div>
+    </div>
+   
+<!-- Row ------------- -->
+    <h4 class="center-align">Organizing Secretaries</h4>
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. V. Samuel Rajkumar</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. S. Karthikeyan</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. S. Babu</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. V. Pragasam</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. M. Anbalagan</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. Arabi Mohammed Saleh</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. C. Rajasekaran</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. T.B. Sridharan</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. P. Ravanan</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+    
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. C. Subathradevi</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. A. Sivakumar</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. Radha Saraswathy</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. P.K. Suresh</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. J. Febin Prabu Dass</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. V. Shanthi</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+
+<!-- Row --------------- -->
+    <div class="row">
+        <div class="col s12 m4 offset-m2">
+            <div class="card">
+                <div class="card-content center-align">
+                <h6>Dr. N. Ramesh</h6></div>
+            </div>
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content center-align">
+                    <h6>Dr. M.A. Jayasri</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+<h3 class="center-align">Organizing Members</h3>
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. C. Sudandira Doss</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. S. Venkat Kumar</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. S. Asha Devi</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+   <!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. E.P. Sabina</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. T. Kalaivani</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. V. Devi Rajeswari</h6>
+          </div>
+        </div>
+        </div>
+    </div>     
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. M. Ramesh Pathy</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. R. Rajasekaran</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. C. George Priya Doss</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. C. Rajam</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. R. Vidya</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. A. Mohanapriya</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. S. Sajitha Lulu</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. B. Reena Rajkumari</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. R. Sudhakaran</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. Podili Kotheswaraiah</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. V.G. Abilash</h6>
+          </div>
+        </div>
+            
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. S. Rajeshkumar</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+<!-- Row ------------- -->
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <h6>Dr. A.S. Vikram</h6>
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+        
+<!-- Footer --------------------------- -->
+        
+
+    <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Address:</h5>
+                    <ul class="grey-text text-lighten-4">
+                        <li>Convener - VIT Biosummit 2016</li>
+                        <li>School of Bio Sciences and Technology, VIT University, Vellore - 632014, Tamil Nadu, India</li>
+                        <li>Email - vitbiosummit2016@gmail.com</li>
+                    </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links:</h5>
+                <ul>
+                    
+                    <div><li><a href="https://www.facebook.com/vitbiosummit/" class="white-text valign-wrapper"><img src={{ url_for('static', filename='img/core/facebook.png') }} style="padding: 0.5rem;">Like us!</a></li></div>
+                    <div><li><a href="https://www.instagram.com/vitbiosummit/" class="white-text valign-wrapper"><img src={{ url_for('static', filename='img/core/instagram.png') }} style="padding: 0.5rem;">Follow us!</a></li></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Synchon Mandal
+            </div>
+          </div>
+    </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static' ,filename='js/materialize/materialize.min.js') }}"></script>
+    <script>
+    $(document).ready(function(){
+        $(".button-collapse").sideNav();
+    });</script>
+</body>
+</html>
