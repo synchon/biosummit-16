@@ -24,4 +24,4 @@ def industry():
 
 #make debug=False while production
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
