@@ -49,6 +49,7 @@
             <li><a href="team.html">Our Team</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="industry.html">Industry Associates</a></li>
+            <li><a href="#" data-activates="slide-out" class="valign-wrapper center-align button-form waves-effect waves-light btn">Register</a></li>
           </ul>
           <ul class="right hide-on-med-and-down">
             <li><a href="http://serb.gov.in/home.php"><img src="{{ url_for('static', filename='img/core/nserb.png') }}"></a></li>
@@ -68,6 +69,13 @@
         </div>
       </nav>
     </div>
+    
+    <! --Side Nav -->
+    
+    
+    <ul id="slide-out" class="side-nav">
+            <li><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNQcS4V74VxE9t31aKcHUygdDjpULR8yiGap3OBCsPTBI-Yg/viewform?embedded=true" width="300" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></li>
+    </ul>
 
     <!-- Start of events portal -->
  
@@ -102,14 +110,11 @@
                 <div class="collapsible-body">
                     <div class="container">
                         <ul>
-                            </br><li><strong>Day 1:</strong></li>
                             <br/><li>Participants can present their start-up idea or a business plan.</li></br>
                             <li>Preliminary screening and developmental sessions wil be held until the idea is feasible.</li></br>
                             <li>Participants will present their idea to the panel. Each team will be given a maximum time of 6 mins.</li></br>
                             <li>Investment offers and grants may be made.</li></br>
                             <li>Evaluation will be done based on the novelty of idea, business plan, presentation skills, problem statement and real world feasibility.</li></br>
-                            <li><strong>Day 2:</strong></li>
-                            <li>10 finalists will be short-listed and the final event will follow the same rules. </li></br>
                         </ul>
                     </div>
                 </div>
@@ -187,10 +192,10 @@
                 <h5>Queries:</h5>
                     <ul>
                         <li>* Demand Draft should be drawn in favour of <b>“VIT University”</b> payable at Vellore.</li>
-                        <li>* Base Registration: Registration kit + Panel Discussions + Poster Presentation + Working Lunch + Any 1 event = <b>INR 500</b></li>
+                        <li>* Base Registration: Registration kit + Panel Discussions + Poster Presentation + Working Lunch + Any 1 event = <b>INR 250</b></li>
                         <li>* Events = INR 100 per participant per event</li>
-                        <li>* VIT Biosummit 2016 T-shirt = <b>INR 300</b></li>
-                        <li>* Combo = Base Registration + T-shirt = <b>INR 750</b></li>
+                        <li>* VIT Biosummit 2016 T-shirt = <b>INR 250</b></li>
+                        <li>* Combo = Base Registration + T-shirt = <b>INR 450</b></li>
                         <li>* Accomodation would be provided in VIT Hostel dorms on payment basis. Fee = <b>INR 275</b> per person per day.</li>
                     </ul>
               </div>
@@ -245,6 +250,11 @@
       $(document).ready(function(){
           $(".button-collapse").sideNav();
           $('.parallax').parallax();
+          $(".button-form").sideNav({
+            menuWidth: 300,
+            edge: 'right',
+            closeOnClick: true,
+            });
         });
   </script>
 </body>
